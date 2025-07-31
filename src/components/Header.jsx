@@ -94,16 +94,14 @@ function Header() {
 
 
                             <div className="dropdown dropdown-end ">
-                                <div tabIndex={0} role="button" className={` w-25 cursor-pointer  flex  justify-start items-end  gap-2  rounded-full avatar ${theme == 'dark' ? 'bg-gray-50/10 border-gray-50/10 ' : 'glass'} p-1`}>
+                                <div tabIndex={0} role="button" className={`  cursor-pointer  flex  justify-start items-end  gap-2  rounded-full avatar ${theme == 'dark' ? 'bg-gray-50/10 border-gray-50/10 ' : 'glass'} p-1`}>
                                     <div className="w-10 rounded-full  ">
                                         <img alt="User Avatar" src={`${(user?.profile?.profile_url) ? (user?.profile?.profile_url) : (`https://ui-avatars.com/api/?name=${user?.firstName}+${user?.lastName}&background=random`)}`} />
                                     
                                             
                                 
                                     </div>
-                                      <div className="text-sm   ">
-                                                {user?.firstName?.charAt(0).toUpperCase() + user?.firstName?.slice(1).toLowerCase()}
-                                            </div>
+                              
                                 </div>
                                 <ul tabIndex={0} className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  rounded-box min-h-50 w-65   ${theme == 'dark' ? 'border border-gray-200/20 bg-black' : ''}`}>
 
